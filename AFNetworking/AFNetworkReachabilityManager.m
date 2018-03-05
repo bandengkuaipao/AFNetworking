@@ -122,7 +122,7 @@ static void AFNetworkReachabilityReleaseCallback(const void *info) {
         address.sin6_len=sizeof(address);
         address.sin6_family=AF_INET6;
 
-        _sharedManager = [selfmanagerForAddress:&address];
+        _sharedManager = [self managerForAddress:&address];
     });
 
     return _sharedManager;
