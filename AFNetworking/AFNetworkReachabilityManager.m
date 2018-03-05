@@ -117,7 +117,7 @@ static void AFNetworkReachabilityReleaseCallback(const void *info) {
     static AFNetworkReachabilityManager *_sharedManager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        structsockaddr_in6 address;
+        struct sockaddr_in6 address;
         bzero(&address,sizeof(address));
         address.sin6_len=sizeof(address);
         address.sin6_family=AF_INET6;
